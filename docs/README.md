@@ -15,17 +15,18 @@ aicyi-example 是一个典型的分层多模块 Spring Boot 工程，覆盖：
 ## 模块结构
 
 ```
-aicyi-example
+aicyi-examples
 ├── aicyi-example-boot        # 主应用（可运行，端口 80）：Web/认证/消息/缓存/Snowflake
 ├── aicyi-example-web         # Controller 层：Auth/Captcha/User/Student
 ├── aicyi-example-service     # Service 层：业务实现 + 统一消息调用
 ├── aicyi-example-domain      # 领域模型：BO/DTO/DO/Entity/枚举/错误码
-├── aicyi-example-dao         # DAO 层：MyBatis Mapper + db/init.sql
+├── aicyi-example-dao         # DAO 层：MyBatis Mapper
 ├── aicyi-example-test        # 纯单测：commons 工具/安全模块测试
 ├── aicyi-example-mybatisplus # MyBatis-Plus 示例应用（可运行，端口 8081）
 ├── aicyi-example-rabbitmq    # RabbitMQ 消息应用（可运行，端口 8082）
 ├── aicyi-example-xxljob      # XXL-Job 定时任务应用（可运行，端口 8083）
 ├── nacos/                    # Nacos 配置中心 YAML（Data ID 与模块导入一一对应）
+├── db/                       # 初始化脚本 db/DDL.sql
 └── docs/                     # 使用文档（本目录）
 ```
 

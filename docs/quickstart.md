@@ -49,10 +49,10 @@ Docker 容器、应用账号、延迟插件与交换机/队列拓扑的完整初
 
 应用需要 3 张表：`t_user`、`t_student`、`message_template`（库名与连接参数见 `nacos/aicyi-datasource.yml`）。
 
-仓库内的 `aicyi-example-dao/db/init.sql` **只创建 `message_template`**（含 `idx_message_type` 索引）：
+仓库内的 `aicyi-examples/db/DDL.sql` ：
 
 ```bash
-mysql -uroot -proot -h127.0.0.1 <库名> < aicyi-example-dao/db/init.sql
+mysql -uroot -proot -h127.0.0.1 <库名> < aicyi-examples/db/DDL.sql
 ```
 
 > **注意：`t_user` / `t_student` 的建表脚本未纳入仓库。**
