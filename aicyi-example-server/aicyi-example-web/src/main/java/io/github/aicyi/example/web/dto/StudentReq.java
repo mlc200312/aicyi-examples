@@ -1,7 +1,6 @@
 package io.github.aicyi.example.web.dto;
 
 import io.github.aicyi.commons.lang.DtoBean;
-import io.github.aicyi.commons.lang.VoBean;
 import io.github.aicyi.midware.web.model.PageRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
