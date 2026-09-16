@@ -32,5 +32,8 @@ logs/
 ### OS files ###
 .DS_Store
 **/.DS_Store
-/.qoder/
+
+### qoder ###
+/.qoder
 /.qoderignore
+/.qoder-patch/

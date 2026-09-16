@@ -28,6 +28,11 @@
             <artifactId>aicyi-midware-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.github.aicyi.midware</groupId>
+            <artifactId>aicyi-midware-operatelog</artifactId>
+        </dependency>
+
         <!-- springdoc-openapi（OpenAPI 3）：springfox 不兼容 Spring Boot 3.x -->
         <dependency>
             <groupId>org.springdoc</groupId>

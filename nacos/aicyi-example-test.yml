@@ -48,3 +48,8 @@ aicyi:
 
     mq:
       provider: rabbitMq
+
+    operate-log:
+      enabled: true
+      storage:
+        type: db

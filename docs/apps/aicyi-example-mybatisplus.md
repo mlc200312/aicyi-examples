@@ -13,7 +13,7 @@ mvn spring-boot:run
 ```
 
 前置：MySQL + Nacos（导入 `aicyi-datasource.yml`，见 [Nacos 配置中心](../infra/nacos.md)）；
-数据库需已初始化（`aicyi-examples/db/DDL.sql`）。
+数据库需已初始化（`aicyi-examples/db/schema.sql`）。
 
 ## 配置
 

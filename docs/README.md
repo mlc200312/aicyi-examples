@@ -26,7 +26,7 @@ aicyi-examples
 ├── aicyi-example-rabbitmq    # RabbitMQ 消息应用（可运行，端口 8082）
 ├── aicyi-example-xxljob      # XXL-Job 定时任务应用（可运行，端口 8083）
 ├── nacos/                    # Nacos 配置中心 YAML（Data ID 与模块导入一一对应）
-├── db/                       # 初始化脚本 db/DDL.sql
+├── db/                       # 初始化脚本 db/schema.sql
 └── docs/                     # 使用文档（本目录）
 ```
 

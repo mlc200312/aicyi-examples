@@ -14,6 +14,7 @@ import io.github.aicyi.example.web.dto.RegisterReq;
 import io.github.aicyi.example.web.dto.UpdatePasswordReq;
 import io.github.aicyi.example.web.mapper.AuthVoMapper;
 import io.github.aicyi.example.web.vo.*;
+import io.github.aicyi.midware.operatelog.annotation.OperLog;
 import io.github.aicyi.midware.web.annotation.IgnoreAuth;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
@@ -44,6 +45,7 @@ public class AuthController {
         return Result.success();
     }
 
+    @OperLog(module = "授权控制器", operType = "登录", desc = "用户登录")
     @Operation(summary = "登录", description = "登录")
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result<LoginResp> login(@Validated @RequestBody LoginReq req) {
