@@ -12,7 +12,7 @@
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
 
         <!-- 注释 -->
-        <commentGenerator type="io.github.aicyi.midware.message.template.SimpleCommentGenerator">
+        <commentGenerator type="io.github.aicyi.example.dao.SimpleCommentGenerator">
             <property name="javaFileEncoding" value="UTF-8"/>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="true"/>
@@ -26,7 +26,7 @@
             <property name="useInformationSchema" value="true"/>
         </jdbcConnection>
 
-        <javaTypeResolver type="io.github.aicyi.midware.message.template.MyJavaTypeResolver">
+        <javaTypeResolver type="io.github.aicyi.example.dao.MyJavaTypeResolver">
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
@@ -52,7 +52,9 @@
 
         <table tableName="t_student" domainObjectName="Student">
             <columnOverride column="grade_type"
-                            javaType="io.github.aicyi.example.domain.type.GradeType"></columnOverride>
+                            javaType="io.github.aicyi.example.domain.type.GradeType"
+            typeHandler="io.github.aicyi.midware.db.commons.typehandler.GenericEnumTypeHandler&lt;java.lang.Integer&gt;"
+            ></columnOverride>
         </table>
 
         <table tableName="message_template" domainObjectName="MessageTemplate">

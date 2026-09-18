@@ -14,8 +14,8 @@ public enum CaptchaType implements EnumType {
     UPDATE_PASSWORD_CAPTCHA_TYPE(3, "修改密码邮件验证码"),
     ;
 
-    private Integer code;
-    private String description;
+    private final Integer code;
+    private final String description;
 
     CaptchaType(Integer code, String description) {
         this.code = code;

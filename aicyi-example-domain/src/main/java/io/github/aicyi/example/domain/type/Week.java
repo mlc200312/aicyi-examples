@@ -20,8 +20,8 @@ public enum Week implements EnumType {
     SUN(7, "星期七"),
     ;
 
-    private int code;
-    private String description;
+    private final int code;
+    private final String description;
 
     Week(int code, String description) {
         this.code = code;

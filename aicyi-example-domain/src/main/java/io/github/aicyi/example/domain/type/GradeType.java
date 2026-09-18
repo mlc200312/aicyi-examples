@@ -19,9 +19,9 @@ public enum GradeType implements StringEnumType {
     FOUR("肆", "四年级"),
     FIVE("伍", "五年级");
 
-    private String code;
+    private final String code;
     @Getter
-    private String description;
+    private final String description;
 
     GradeType(String code, String description) {
         this.code = code;

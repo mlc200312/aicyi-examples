@@ -1,4 +1,4 @@
-package io.github.aicyi.midware.message.template;
+package io.github.aicyi.example.dao;
 
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;

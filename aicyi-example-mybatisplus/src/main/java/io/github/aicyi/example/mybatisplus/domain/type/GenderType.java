@@ -13,7 +13,6 @@ import lombok.Getter;
 public enum GenderType implements EnumType {
     MAN(1, "男"), WOMAN(2, "女");
 
-    @EnumValue
     private final Integer code;
     private final String description;
 

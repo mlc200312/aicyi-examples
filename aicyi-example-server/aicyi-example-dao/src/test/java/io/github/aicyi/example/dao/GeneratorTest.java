@@ -1,4 +1,4 @@
-package io.github.aicyi.midware.message.template;
+package io.github.aicyi.example.dao;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;

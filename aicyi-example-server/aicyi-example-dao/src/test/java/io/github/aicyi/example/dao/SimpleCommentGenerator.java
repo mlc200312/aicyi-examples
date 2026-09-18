@@ -1,4 +1,4 @@
-package io.github.aicyi.midware.message.template;
+package io.github.aicyi.example.dao;
 
 import org.apache.commons.lang3.StringUtils;
 import org.mybatis.generator.api.IntrospectedColumn;
